@@ -32,7 +32,7 @@ The system measures punching force, plays synchronized animations, handles multi
 ### Tools & Technologies
 
 **Hardware:** ESP8266, WS2812B LEDs, DFPlayer Mini, opto-isolated sensor interfaces  
-**Software:** C++, Arduino Core, KiCad, Proteus, FreeCAD  
+**Software:** PlatfromIO, Altium Designer, Fusion360  
 **Concepts:** Event-driven firmware, hardware abstraction layers, concurrent transaction handling  
 
 ---
@@ -43,6 +43,6 @@ The Naiza Boxer has been successfully deployed in **multiple entertainment venue
 
 ---
 
-### Project Images
+### Machine in Action:
 
-![naiza_boxer_machine](https://github.com/user-attachments/assets/your_image_id_2_here)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oXvFHqnwneo?si=z3zfPrCvvZY8NoVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
