@@ -41,5 +41,16 @@ Selected Experience
 
 Activities and Achievements
 ======
-some of my achievements
+🏆 Winner in the KRC2019 (Kazakhstan Robotics Challenge)
+
+🏆 Winner in the KazEnergy Competition
+
+⚖️ Served as an official judge and university representative responsible for evaluating participants and awarding full academic scholarships
+
+👩🏻‍💻 Completed an internship at **Hyundai Trans Kazakhstan**, specializing in **industrial automation and control systems**, including process monitoring and PLC-based equipment management.
+
+🏛️ Visited **TalTech University (Estonia)** by official invitation to exchange expertise in **robotics, embedded systems, and automation**, representing Kazakh-British Technical University in international collaboration activities.
+
+🏛️ Visited **Instituto Superior de Engenharia de Coimbra (Portugal)** by official invitation to share practical experience in **IoT, control systems, and robotics education**, fostering cross-institutional cooperation.
+
 
