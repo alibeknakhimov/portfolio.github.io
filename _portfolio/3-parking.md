@@ -16,7 +16,6 @@ This system was **developed and deployed under AlmaValley**, integrating custom 
 - **IoT Hardware Module (ESP32 + Custom PCB):**  
   Designed and built a **custom ESP32-based controller board** to receive secure open/close commands via Firebase Realtime Database.  
   Integrated **relay control circuitry**, **optical isolation**, and **failsafe manual override**.  
-  Firmware implemented in **Arduino C++**, communicating with Firebase over **HTTPS**.
 
 - **Cross-Platform App Ecosystem:**  
   Developed a **Flutter-based mobile app** for staff authentication and gate control.  
