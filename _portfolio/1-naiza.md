@@ -43,7 +43,7 @@ The Naiza Boxer has been successfully deployed in **multiple entertainment venue
 
 ---
 
-### Machine in Action:
+### Machine in Action
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oXvFHqnwneo?si=z3zfPrCvvZY8NoVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 

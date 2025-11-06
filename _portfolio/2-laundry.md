@@ -47,7 +47,6 @@ This innovation eliminated the need for coin or token systems and significantly 
 
 ---
 
-### Project Media
+### System in Action
 
-![smart_laundry_board](https://github.com/user-attachments/assets/your_image_id_2_here)
-![smart_laundry_ui](https://github.com/user-attachments/assets/your_image_id_3_here)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hlpey2L98C8?si=zOXEdxtHM5OTurdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
