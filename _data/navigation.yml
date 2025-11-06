@@ -10,7 +10,7 @@
 main:
 
   - title: "CV"
-    url: /cv/
+    url: /files/alibek_nakhimov_cv.pdf
 
   - title: "Portfolio"
     url: /portfolio/
