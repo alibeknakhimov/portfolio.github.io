@@ -15,7 +15,31 @@ redirect_from:
 
 Selected Experience
 ======
-My experiences, jobs, internships
+🔧 Embedded Systems Engineer, Jaqsy IT
+
+*Developed commercial embedded control systems and custom PCB designs for entertainment and IoT devices.
+
+*Designed multilayer PCBs in Altium Designer, integrating microcontrollers, power management, and sensor interfaces.
+
+*Developed and debugged firmware in C/C++ for ESP8266, implementing interrupt-driven and event-based logic.
+
+*Created hardware test setups for EMI validation, sensor calibration, and actuator control reliability.
+
+*Collaborated with mechanical engineers using Fusion 360 to ensure integration of electronic modules into final enclosures.
+
+*Tools Used: Altium Designer, ESP8266 SDK, C/C++, Fusion 360, Logic Analyzer
+
+💡 IoT & Hardware Systems Developer, Alma Valley
+
+*Designed and deployed a distributed media broadcasting system using Raspberry Pi for educational facilities.
+
+*Developed automation workflows in Node-RED with Firebase backend for remote content updates and device monitoring.
+
+*Created a desktop interface in Python and JavaScript for managing uploads and controlling multiple endpoints.
+
+*Led PCB design for peripheral modules and power delivery systems for embedded edge devices.
+
+*Tools Used: Raspberry Pi, Node-RED, Firebase, Python, JavaScript, Altium Designer, Fusion 360
 
 
 
