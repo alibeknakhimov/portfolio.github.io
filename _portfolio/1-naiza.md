@@ -46,3 +46,9 @@ The Naiza Boxer has been successfully deployed in **multiple entertainment venue
 ### Machine in Action:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oXvFHqnwneo?si=z3zfPrCvvZY8NoVO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+TikTok videos of Naiza Boxer gained over **500,000** and **100,000** views on TikTok:
+
+- 🎥 [Watch (500K+ views)](https://vm.tiktok.com/ZMSk7nHwa/)
+- 🎥 [Watch (100K+ views)](https://vm.tiktok.com/ZMSk7WPcM/)
