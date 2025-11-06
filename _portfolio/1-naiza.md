@@ -1,29 +1,48 @@
 ---
-title: "Autonomous Elevator Operation with Unitree Go2 Robot Dog"
-excerpt: "Developed a fully autonomous robotic system using Unitree Go2, ROS2, and computer vision to detect elevator panels, dock, press buttons, and operate elevators. <br/> ![elevator_dog_wme](https://github.com/user-attachments/assets/553a5174-18b3-4448-ac30-46820a85627a)
-
-"
+title: "Naiza Boxer — Commercial Arcade Punching Machine"
+excerpt: "Engineered a commercial-grade arcade punching machine integrating mechanical, electronic, and software subsystems. <br/> ![naiza_boxer](https://raw.githubusercontent.com/alibeknakhimov/Naiza-Boxer/refs/heads/main/media/photos/boxer.jpg)"
 collection: portfolio
 ---
 
-This academic research project, currently under review for publication in **IEEE**, focused on enabling a **Unitree Go2 quadruped robot** to autonomously operate elevators. The system was designed to expand the mobility of legged robots in real-world indoor environments, where vertical navigation is essential.
+The **Naiza Boxer** project is a **commercial arcade punching machine** developed at **Jaqsy IT**, designed from the ground up to combine **mechanical engineering, embedded electronics, and software integration** into a robust entertainment system deployed across Kazakhstan.  
 
-The robot was equipped with **ROS2**, the **Unitree SDK**, and **computer vision techniques** to achieve perception and control. Using **AprilTag detection**, the robot could accurately identify elevator panels, perform precise docking maneuvers, and press the correct buttons autonomously.  
+The system measures punching force, plays synchronized animations, handles multi-channel payments, and provides a seamless user experience through a modular embedded architecture.
 
-Highlights: <br/><br/>
-- **Autonomous Elevator Operation**: Successfully integrated perception, planning, and actuation to allow the robot to detect panels, dock, and press buttons without human intervention. <br/>
-- **Computer Vision Integration**: Used AprilTag technology to ensure robust detection of elevator panels in varied lighting and angle conditions. <br/>
-- **Seamless Control**: Combined ROS2 middleware, the Unitree SDK, and custom navigation algorithms to achieve reliable performance. <br/>
-- **Research Contribution**: Project submitted to IEEE, contributing to advancements in mobile robotics and service robot autonomy. <br/>
+---
 
-<br/>
+### Highlights
 
-### Robot in Action:
+- **Custom Embedded Hardware:**  
+  Designed two dedicated PCBs — a **main control board** and a **display module** — with **EMI protection**, **optically isolated inputs**, and **robust power handling** for high-current solenoids and LED matrices.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u_en0hrqWdA?si=KSGcxeauTMH4jlo5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+- **ESP8266 Firmware (C++):**  
+  Implemented **event-driven**, non-blocking firmware architecture for real-time responsiveness using **interrupts** and **timers**, ensuring reliable operation under continuous commercial use.
 
+- **Multi-Payment Integration:**  
+  Supported **coin acceptors**, **bill validators**, and **QR-based payments** via local banks. Implemented secure logic for **transaction concurrency** and fault recovery.
 
+- **Visual & Audio Synchronization:**  
+  Developed **WS2812B LED matrix animations** and **DFPlayer Mini-based audio playback** to provide real-time feedback synced with impact sensing events.
 
-<br/><br/>
+- **System Reliability:**  
+  Applied **hardware abstraction**, **ISR-based event handling**, and **modular firmware design**, achieving excellent uptime and field performance.
 
-This project demonstrates the potential of **quadruped robots in human-centered environments**, highlighting how advanced perception and autonomy can extend their usability to multi-floor navigation.  
+---
+
+### Tools & Technologies
+
+**Hardware:** ESP8266, WS2812B LEDs, DFPlayer Mini, opto-isolated sensor interfaces  
+**Software:** C++, Arduino Core, KiCad, Proteus, FreeCAD  
+**Concepts:** Event-driven firmware, hardware abstraction layers, concurrent transaction handling  
+
+---
+
+### Deployment
+
+The Naiza Boxer has been successfully deployed in **multiple entertainment venues across Kazakhstan**, where it continues to operate reliably under heavy daily use, demonstrating the effectiveness of embedded system design principles in a real-world commercial environment.
+
+---
+
+### Project Images
+
+![naiza_boxer_machine](https://github.com/user-attachments/assets/your_image_id_2_here)
