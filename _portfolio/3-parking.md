@@ -14,23 +14,23 @@ This system was **developed and deployed under AlmaValley**, integrating custom 
 ### Highlights
 
 - **IoT Hardware Module (ESP32 + Custom PCB):**  
-  Designed and built a **custom ESP32-based controller board** to receive secure open/close commands via Firebase Realtime Database.  
-  Integrated **relay control circuitry**, **optical isolation**, and **failsafe manual override**.  
+  Designed and built a custom ESP32-based controller board to receive secure open/close commands via Firebase Realtime Database.  
+  Integrated relay control circuitry, and failsafe manual override.  
 
 - **Cross-Platform App Ecosystem:**  
-  Developed a **Flutter-based mobile app** for staff authentication and gate control.  
-  Users can open the gate only if they are within a geofenced radius verified via **Firebase Authentication + Realtime Database**.
+  Developed a Flutter-based mobile app for staff authentication and gate control.  
+  Users can open the gate only if they are within a geofenced radius verified via Firebase Authentication + Realtime Database.
 
 - **AI Vehicle Tracking (Python + YOLOv3):**  
-  Deployed a **computer vision module** that analyzes CCTV feeds in real time to detect and log vehicle entry/exit events.  
+  Deployed a computer vision module that analyzes CCTV feeds in real time to detect and log vehicle entry/exit events.  
   Utilized **YOLOv3** for detection and **ROI-based tracking** to determine direction of movement (entry or exit).
 
 - **Security & Cloud Infrastructure:**  
-  Implemented **secure authentication rules** in Firebase, verifying both user identity and location.  
-  All transactions are **logged in real time**, providing a digital audit trail for access records.
+  Implemented secure authentication rules in Firebase, verifying both user identity and location.  
+  All transactions are logged in real time, providing a digital audit trail for access records.
 
 - **Administrative Interface:**  
-  Built a **desktop guard control panel (Flutter + Python)** to monitor gate activity, manage users, and export reports to Excel.
+  Built a desktop guard control panel (Flutter + Python) to monitor gate activity, manage users, and export reports to Excel.
 
 ---
 
@@ -45,8 +45,8 @@ This system was **developed and deployed under AlmaValley**, integrating custom 
 
 ### Deployment
 
-The system is **fully operational** at the **AlmaValley parking site**, handling daily gate operations for staff and students.  
-It has proven to be **reliable, secure, and scalable**, forming the foundation for future smart campus infrastructure.
+The system is fully operational at parking site, handling daily gate operations for staff and students.  
+It has proven to be reliable, secure, and scalable, forming the foundation for future smart campus infrastructure.
 
 ---
 

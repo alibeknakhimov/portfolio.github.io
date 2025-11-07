@@ -4,7 +4,7 @@ excerpt: "Engineered a commercial-grade arcade punching machine integrating mech
 collection: portfolio
 ---
 
-The **Naiza Boxer** project is a **commercial arcade punching machine** developed at **Jaqsy IT**, designed from the ground up to combine **mechanical engineering, embedded electronics, and software integration** into a robust entertainment system deployed across Kazakhstan.  
+The **Naiza Boxer** project is a commercial arcade punching machine developed at Jaqsy IT, designed from the ground up to combine mechanical engineering, embedded electronics, and software integration into a robust entertainment system deployed across Kazakhstan.  
 
 The system measures punching force, plays synchronized animations, handles multi-channel payments, and provides a seamless user experience through a modular embedded architecture.
 
@@ -13,19 +13,19 @@ The system measures punching force, plays synchronized animations, handles multi
 ### Highlights
 
 - **Custom Embedded Hardware:**  
-  Designed two dedicated PCBs — a **main control board** and a **display module** — with **EMI protection**, **optically isolated inputs**, and **robust power handling** for high-current solenoids and LED matrices.
+  Designed two dedicated PCBs — a main control board and a display module — with EMI protection, optically isolated inputs, and robust power handling for high-current solenoids and LED matrices.
 
 - **ESP8266 Firmware (C++):**  
-  Implemented **event-driven**, non-blocking firmware architecture for real-time responsiveness using **interrupts** and **timers**, ensuring reliable operation under continuous commercial use.
+  Implemented event-driven, non-blocking firmware architecture for real-time responsiveness using interrupts and timers, ensuring reliable operation under continuous commercial use.
 
 - **Multi-Payment Integration:**  
-  Supported **coin acceptors**, **bill validators**, and **QR-based payments** via local banks. Implemented secure logic for **transaction concurrency** and fault recovery.
+  Supported coin acceptors, bill validators, and QR-based payments via local banks. Implemented secure logic for transaction concurrency and fault recovery.
 
 - **Visual & Audio Synchronization:**  
-  Developed **WS2812B LED matrix animations** and **DFPlayer Mini-based audio playback** to provide real-time feedback synced with impact sensing events.
+  Developed WS2812B LED matrix animations and DFPlayer Mini-based audio playback to provide real-time feedback synced with impact sensing events.
 
 - **System Reliability:**  
-  Applied **hardware abstraction**, **ISR-based event handling**, and **modular firmware design**, achieving excellent uptime and field performance.
+  Applied hardware abstraction, ISR-based event handling, and modular firmware design, achieving excellent uptime and field performance.
 
 ---
 

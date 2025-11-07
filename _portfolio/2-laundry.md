@@ -4,31 +4,31 @@ excerpt: "Developed a commercial IoT control board enabling washing machines onl
 collection: portfolio
 ---
 
-The **Smart Laundry Payment Module** is a **production-grade IoT control system** designed and deployed for laundromats across Kazakhstan.  
-It enables **cashless machine activation** via mobile banking apps (e.g., **Kaspi Bank**) and ensures complete appliance safety through **optically isolated high-voltage control**.
+The **Smart Laundry Payment Module** is a production-grade IoT control system designed and deployed for laundromats across Kazakhstan.  
+It enables cashless machine activation via mobile banking apps (e.g., **Kaspi Bank**) and ensures complete appliance safety through optically isolated high-voltage control.
 
-The project combines **custom PCB design**, **embedded firmware**, and **secure backend communication**, forming a scalable commercial solution for contactless laundry automation.
+The project combines custom PCB design, embedded firmware, and secure backend communication, forming a scalable commercial solution for contactless laundry automation.
 
 ---
 
 ### Highlights
 
 - **Custom PCB Design:**  
-  Designed a **CNC-milled control board** based on **ESP-12F (ESP8266)**, featuring **three PC817 optocouplers**, an **AMS1117-3.3V regulator**, and high-voltage isolation for 230V appliance control.  
-  Provided complete **hardware package** — schematics, PCB, Gerber, and BOM.
+  Designed a CNC-milled control board based on **ESP-12F (ESP8266), featuring PC817 optocouplers, an AMS1117-3.3V regulator, and high-voltage isolation for 230V appliance control.  
+  Provided complete hardware package — schematics, PCB, Gerber, and BOM.
 
 - **Firmware Implementation:**  
-  Developed **state-machine-based firmware**, handling Wi-Fi setup, secure HTTP polling, and machine control logic.  
-  The firmware interacts with a **custom backend API**, checking payment status and triggering appliance start sequences.
+  Developed state-machine-based firmware, handling Wi-Fi setup, secure HTTP polling, and machine control logic.  
+  The firmware interacts with a custom backend API, checking payment status and triggering appliance start sequences.
 
 - **Backend Integration:**  
-  The system periodically polls a **cloud server** over HTTP to verify payment confirmations and uses secure logic to handle concurrent user access.
+  The system periodically polls a cloud server over HTTP to verify payment confirmations and uses secure logic to handle concurrent user access.
 
 - **System Safety:**  
-  Implemented **opto-isolated control** between logic and power sections, ensuring user safety and appliance reliability.
+  Implemented opto-isolated control between logic and power sections, ensuring user safety and appliance reliability.
 
 - **Ease of Deployment:**  
-  Designed for **quick installation** and **plug-and-play retrofit** into existing laundromat systems with clear wiring, setup, and deployment documentation.
+  Designed for quick installation and plug-and-play retrofit into existing laundromat systems with clear wiring, setup, and deployment documentation.
 
 ---
 
