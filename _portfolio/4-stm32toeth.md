@@ -15,7 +15,7 @@ The objective was to achieve real-time remote hardware control (relay modules) v
 The architecture features three core components:
 
 1. **Qt5 GUI Application (Raspberry Pi 5):**  
-   - Acts as a TCP server listening on port `2000`.  
+   - Acts as a TCP server.  
    - Built with C++/QML, optimized for touchscreen interaction via EGLFS (no X11/Wayland).  
    - User actions (e.g., slider movements) send UTF-8 encoded commands over TCP.  
    - Includes systemd startup scripts and a custom splash screen for appliance-style operation.  
