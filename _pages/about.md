@@ -19,7 +19,7 @@ Selected Experience
 
 * Developed commercial embedded control systems and custom PCB designs for entertainment and IoT devices.
 
-* Designed multilayer PCBs in Altium Designer, integrating microcontrollers, power management, and sensor interfaces.
+* Designed PCBs, integrating microcontrollers, power management, and sensor interfaces.
 
 * Developed and debugged firmware in C/C++ for ESP8266, implementing interrupt-driven and event-based logic.
 
