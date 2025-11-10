@@ -54,6 +54,13 @@ It has proven to be reliable, secure, and scalable, forming the foundation for f
 | :-------------------------------------------: | :--------------------------------------------: |
 | ![](https://raw.githubusercontent.com/alibeknakhimov/Smart-Parking-Access/refs/heads/main/docs/hardware/pcb_prototype.jpg) | ![](https://raw.githubusercontent.com/alibeknakhimov/Smart-Parking-Access/refs/heads/main/docs/hardware/pcb_in_box.jpg) |
 
-
+![](https://raw.githubusercontent.com/alibeknakhimov/Smart-Parking-Access/refs/heads/main/docs/diagram.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QCAOsHkRp34?si=iDeNrls_kpViObvS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+
+### GitHub
+[Project on GitHub](https://github.com/alibeknakhimov/Smart-Parking-Access)

@@ -52,3 +52,8 @@ TikTok videos of Naiza Boxer gained over **500,000** and **100,000** views on Ti
 
 - 🎥 [Watch (500K+ views)](https://vm.tiktok.com/ZMSk7nHwa/)
 - 🎥 [Watch (100K+ views)](https://vm.tiktok.com/ZMSk7WPcM/)
+
+
+
+### GitHub
+[Project on GitHub](https://github.com/alibeknakhimov/Naiza-Boxer)

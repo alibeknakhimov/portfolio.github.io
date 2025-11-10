@@ -57,3 +57,5 @@ The architecture features three core components:
 
 
 
+### GitHub
+[Project on GitHub](https://github.com/alibeknakhimov/qt-stm32-ethernet-control)
