@@ -1,6 +1,6 @@
 ---
 title: "Breathalyzer Access Control Interface Board for Screening Tablet"
-excerpt: "Designed a custom isolated interface PCB for a breathalyzer and completed full hardware integration—including enclosure assembly, wiring, mounting, and prototype validation. <br/> ![breathalyzer_interface](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/tablet.jpg)"
+excerpt: "Designed a custom isolated interface PCB for a breathalyzer and completed full hardware integration including enclosure assembly, wiring, mounting, and prototype validation. <br/> ![breathalyzer_interface](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/tablet.jpg)"
 collection: portfolio
 ---
 
