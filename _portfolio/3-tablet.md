@@ -1,6 +1,6 @@
 ---
 title: "Breathalyzer Access Control Interface Board for Screening Tablet"
-excerpt: "Designed a custom isolation and signaling interface allowing a breathalyzer to securely communicate access control states to a single-board computer. <br/> ![breathalyzer_interface](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/tablet.jpg)"
+excerpt: "Designed a custom isolated interface PCB for a breathalyzer and completed full hardware integration—including enclosure assembly, wiring, mounting, and prototype validation. <br/> ![breathalyzer_interface](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/tablet.jpg)"
 collection: portfolio
 ---
 
@@ -12,7 +12,7 @@ The original device output high-voltage control signals intended for turnstile o
 ### Highlights
 
 - **Isolation & Signal Conditioning:**  
-  Designed a custom PCB featuring optocoupler-based galvanic isolation to safely convert high-voltage relay outputs from the breathalyzer into low-voltage logic inputs for the SBC.
+  Designed a custom PCB featuring **optocoupler-based galvanic isolation** to safely convert high-voltage relay outputs from the breathalyzer into low-voltage logic inputs for the SBC.
 
 - **State Mapping & Control Logic:**  
   Converted hardware signals into interpretable digital states such as:  
@@ -22,14 +22,14 @@ The original device output high-voltage control signals intended for turnstile o
 - **Power Regulation & Safety:**  
   Implemented a power reduction stage to adapt industrial control voltages to safe MCU-level ranges while ensuring long-term reliability.
 
-- **Rapid Prototyping:**  
-  Fabricated the initial revision as a CNC-milled FR-4 prototype, enabling fast iteration, mechanical validation, and electrical testing prior to moving toward a production-ready version.
+- **Rapid Hardware Prototyping:**  
+  Fabricated the first revision as a **CNC-milled FR-4 prototype**, enabling fast testing, electrical validation, and mechanical fitting before production iteration.
 
-- **Mechanical Integration:**  
-  Participated in enclosure integration and full device assembly, including wiring, mounting, and hardware validation.
+- **Full Device Assembly & Mechanical Integration:**  
+  Assembled the tablet hardware, including internal wiring, power routing, connector layout, vibration-safe mounting, and enclosure fitment — ensuring a stable and serviceable final hardware stack.
 
 - **Cross-Team Collaboration:**  
-  Worked closely with software developers to align pin logic, timing behavior, and system requirements for reliable hardware–software interaction.
+  Worked closely with the software development team to align hardware signals, timing assumptions, and interface expectations for seamless integration.
 
 ---
 
@@ -43,7 +43,7 @@ The original device output high-voltage control signals intended for turnstile o
 
 ### PCB
 
-![](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/tablet.jpg)
+![](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/alc_pcb.jpg)
 
 ---
 
