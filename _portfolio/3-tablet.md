@@ -1,6 +1,6 @@
 ---
 title: "Breathalyzer Access Control Interface Board for Screening Tablet"
-excerpt: "Designed a custom isolation and signaling interface allowing a breathalyzer to securely communicate access control states to a single-board computer. <br/> ![breathalyzer_interface](https://github.com/user-attachments/assets/example_board.jpg)"
+excerpt: "Designed a custom isolation and signaling interface allowing a breathalyzer to securely communicate access control states to a single-board computer. <br/> ![breathalyzer_interface](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/tablet.jpg)"
 collection: portfolio
 ---
 
@@ -12,7 +12,7 @@ The original device output high-voltage control signals intended for turnstile o
 ### Highlights
 
 - **Isolation & Signal Conditioning:**  
-  Designed a custom PCB featuring **optocoupler-based galvanic isolation** to safely convert high-voltage relay outputs from the breathalyzer into low-voltage logic inputs for the SBC.
+  Designed a custom PCB featuring optocoupler-based galvanic isolation to safely convert high-voltage relay outputs from the breathalyzer into low-voltage logic inputs for the SBC.
 
 - **State Mapping & Control Logic:**  
   Converted hardware signals into interpretable digital states such as:  
@@ -23,7 +23,7 @@ The original device output high-voltage control signals intended for turnstile o
   Implemented a power reduction stage to adapt industrial control voltages to safe MCU-level ranges while ensuring long-term reliability.
 
 - **Rapid Prototyping:**  
-  Fabricated the initial revision as a **CNC-milled FR-4 prototype**, enabling fast iteration, mechanical validation, and electrical testing prior to moving toward a production-ready version.
+  Fabricated the initial revision as a CNC-milled FR-4 prototype, enabling fast iteration, mechanical validation, and electrical testing prior to moving toward a production-ready version.
 
 - **Mechanical Integration:**  
   Participated in enclosure integration and full device assembly, including wiring, mounting, and hardware validation.
@@ -41,9 +41,15 @@ The original device output high-voltage control signals intended for turnstile o
 
 ---
 
-### Deployment
+### PCB
 
-The module is currently undergoing integration testing and is being prepared for deployment as part of a full entry-screening device.
+![](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/tablet.jpg)
 
 ---
+
+### Tablet in Action
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/iK1eSbh4oyw?si=CKWtRpk2vZTpTtSe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
 
