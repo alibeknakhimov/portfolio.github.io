@@ -111,7 +111,7 @@ The shield is a protoboard that plugs into the ribbon connector on the stepper b
 
 | Shield | QLST indicator | Bottle on the drum |
 | :---: | :---: | :---: |
-| ![RS-485 to UART shield]({{ site.url }}{{ site.baseurl }}/images/filling/02_shield_top.jpg) | ![QLST weighing indicator]({{ site.url }}{{ site.baseurl }}/images/filling/04_qlst_indicator.jpg) | ![Bottle seated on the drum carrier]({{ site.url }}{{ site.baseurl }}/images/filling/06_field_closeup.jpg) |
+| <img src="{{ site.url }}{{ site.baseurl }}/images/filling/02_shield_top.jpg" alt="RS-485 to UART shield" style="width:220px;max-width:100%;height:auto;"> | ![QLST weighing indicator]({{ site.url }}{{ site.baseurl }}/images/filling/04_qlst_indicator.jpg) | ![Bottle seated on the drum carrier]({{ site.url }}{{ site.baseurl }}/images/filling/06_field_closeup.jpg) |
 
 Modbus master: non-blocking state machine, 35 ms between polls, 25 ms response timeout, CRC-16, then the next slave. One silent indicator does not stall the other four. Register `0x11` is used for peeling (runtime tare). Register `0x12` rewrites the EEPROM zero and is not touched at runtime.
 
