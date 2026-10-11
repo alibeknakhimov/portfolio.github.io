@@ -32,7 +32,7 @@ A rotating drum presents bottles to five nozzle columns. Each column has a peris
 | Calibration | 16x2 LCD inside the enclosure | Buttons and display on each indicator |
 | Adapter | Ribbon into the stepper board | Shield plugs into that same connector, stepper PCB unchanged |
 | HMI | Long UART cable to a Raspberry Pi | USB CDC |
-| Firmware | Entire application inside one TIM6 interrupt | Motion tick in TIM6, drum event on its own EXTI, Modbus state machine in the main loop |
+| Firmware | Entire application inside one TIM6 interrupt | Drum on TIM7 (priority 0), nozzles and pumps on TIM6 (priority 1), Modbus state machine in the main loop |
 | Fill control | Bang-bang on two thresholds | Soft start, fast fill, nozzle follows the liquid surface, slow finish, drip tail |
 | Throughput | 480 bottles/hour | 650 bottles/hour |
 
@@ -58,10 +58,11 @@ flowchart LR
     LC[5 load cells] --> Q[5 QLST indicators]
     Q -->|RS-485 115200| SH[RS-485 to UART shield]
     SH -->|same UART pins| MCU[STM32F4]
-    MCU --> TIM[TIM6 motion tick]
-    MCU --> EXTI[EXTI drum event]
+    MCU --> TIM[TIM6 nozzles and pumps]
+    MCU --> DRUMIRQ[TIM7 drum stepper]
     MCU --> MB[Modbus master]
     TIM --> DRV[Step drivers]
+    DRUMIRQ --> DRV
     DRV --> MECH[Drum, nozzles, pumps]
     PI[Raspberry Pi HMI] -->|USB CDC| MCU
 </pre>
@@ -129,7 +130,7 @@ Three months on the running line, not only the bench:
 
 ### Tools
 
-**MCU:** STM32F407VG, TIM6, USART2, USB CDC, EXTI  
+**MCU:** STM32F407VG, TIM6, TIM7, USART2, USB CDC  
 **Bus:** Modbus RTU, RS-485, QLST indicators  
 **Tools:** STM32CubeIDE, STM32CubeMX, HAL  
 **Kept from the 2021 machine:** mechanics, stepper carrier board, Darlington array, industrial step drivers
