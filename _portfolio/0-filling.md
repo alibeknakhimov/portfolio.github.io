@@ -26,11 +26,11 @@ A rotating drum presents bottles to five nozzle columns. Each column has a peris
 
 | | 2021 system | After modernization |
 |---|---|---|
-| Weighing | Custom PCB, 5x HX711, bit-banged on STM32F1 | 5x QLST indicators, Modbus RTU, addresses 1 to 5, 115200 bps |
+| Weighing | Custom PCB, 4x HX711, bit-banged on STM32F1 | 5x QLST indicators, Modbus RTU, addresses 1 to 5, 115200 bps |
 | Weighing MCU | Dedicated board, blocking main loop | Removed |
-| Bus | Parallel ribbon | 2-wire RS-485, extra sensor by chaining |
+| Link to the stepper board | UART on the ribbon between the two boards | Same UART pins, now into my RS-485 shield |
 | Calibration | 16x2 LCD inside the enclosure | Buttons and display on each indicator |
-| Adapter | Ribbon into the stepper board | My RS-485 to UART shield, same connector, stepper PCB unchanged |
+| Adapter | Ribbon into the stepper board | Shield plugs into that same connector, stepper PCB unchanged |
 | HMI | Long UART cable to a Raspberry Pi | USB CDC |
 | Firmware | Entire application inside one TIM6 interrupt | Motion tick in TIM6, drum event on its own EXTI, Modbus state machine in the main loop |
 | Fill control | Bang-bang on two thresholds | Soft start, fast fill, nozzle follows the liquid surface, slow finish, drip tail |
@@ -40,31 +40,31 @@ A rotating drum presents bottles to five nozzle columns. Each column has a peris
 
 ### Architecture
 
-**Before.** Five HX711 channels were bit-banged in a blocking loop. The stepper MCU did drum, nozzles, pumps, and sensing inside one 10 kHz interrupt.
+**Before.** Four HX711 channels were bit-banged in a blocking loop on the weighing board. That board sent weights to the stepper board over UART on the ribbon. The stepper MCU did drum, nozzles, pumps, and sensing inside one 10 kHz interrupt.
 
-<div class="mermaid" markdown="0">
+<pre class="mermaid">
 flowchart LR
-    LC[5 x load cells] --> HX[STM32F1 plus 5 x HX711]
-    HX -->|ribbon| MCU[STM32F4 TIM6 ISR]
+    LC[4 load cells] --> HX[STM32F1 and 4x HX711]
+    HX -->|UART on the ribbon| MCU[STM32F4 TIM6 ISR]
     MCU --> DRV[Step drivers]
     DRV --> MECH[Drum, nozzles, pumps]
-    PI[Raspberry Pi HMI] <-->|long UART| MCU
-</div>
+    PI[Raspberry Pi HMI] -->|long UART| MCU
+</pre>
 
-**After.** The weighing board is gone. Indicators sit on one RS-485 bus. The shield plugs into the original connector on the stepper board, so the carrier PCB was not respun. Pull the shield and the machine can return to the previous wiring.
+**After.** The weighing board is gone. Five indicators sit on one RS-485 bus. The shield plugs into the same ribbon connector on the stepper board and uses the UART pins that used to talk to the weighing board. The stepper PCB was not respun.
 
-<div class="mermaid" markdown="0">
+<pre class="mermaid">
 flowchart LR
-    LC[5 x load cells] --> Q[5 x QLST indicators]
+    LC[5 load cells] --> Q[5 QLST indicators]
     Q -->|RS-485 115200| SH[RS-485 to UART shield]
-    SH -->|USART2| MCU[STM32F4]
+    SH -->|same UART pins| MCU[STM32F4]
     MCU --> TIM[TIM6 motion tick]
     MCU --> EXTI[EXTI drum event]
     MCU --> MB[Modbus master]
     TIM --> DRV[Step drivers]
     DRV --> MECH[Drum, nozzles, pumps]
-    PI[Raspberry Pi HMI] <-->|USB CDC| MCU
-</div>
+    PI[Raspberry Pi HMI] -->|USB CDC| MCU
+</pre>
 
 <script type="module">
   import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
@@ -90,23 +90,23 @@ The new profile is scaled from a 93 g reference dose, so the same shape runs at 
 
 ### In motion
 
-One bottle: nozzle down, soft start, fast fill, slow finish, nozzle up.
-
-<video controls playsinline preload="metadata" width="100%" style="max-width:720px; border-radius:6px;">
-  <source src="{{ site.url }}{{ site.baseurl }}/videos/filling/single_fill.mp4" type="video/mp4">
-</video>
-
 A longer run of the line.
 
 <video controls playsinline preload="metadata" width="100%" style="max-width:720px; border-radius:6px;">
   <source src="{{ site.url }}{{ site.baseurl }}/videos/filling/fill_cycle.mp4" type="video/mp4">
 </video>
 
+One bottle: nozzle down, soft start, fast fill, slow finish, nozzle up.
+
+<video controls playsinline preload="metadata" width="100%" style="max-width:720px; border-radius:6px;">
+  <source src="{{ site.url }}{{ site.baseurl }}/videos/filling/single_fill.mp4" type="video/mp4">
+</video>
+
 ---
 
 ### Hardware I added
 
-The shield is a protoboard that reuses the stepper board connector. Two pins that used to be HX711 clock and data are remapped to USART2 and fed into a MAX485-class transceiver.
+The shield is a protoboard that plugs into the ribbon connector on the stepper board. That ribbon already carried UART between the stepper board and the weighing board. Those UART pins now go into a MAX485-class transceiver, and from there to the QLST bus. The stepper PCB was not modified.
 
 | Shield | QLST indicator | Bottle on the drum |
 | :---: | :---: | :---: |
@@ -120,7 +120,7 @@ Modbus master: non-blocking state machine, 35 ms between polls, 25 ms response t
 
 Three months on the running line, not only the bench:
 
-- A first attempt kept the old weighing MCU and hijacked one HX711 pin pair as UART. It ran, with jitter and overfill, so that board was removed.
+- A first attempt kept the weighing board. One of its four HX711 chips sat on two pins that could also be UART, so that chip was removed and those pins were wired to the new indicators. It ran, with jitter, delay, and overfill, because the rest of that board was still bit-banging the other HX711s. The weighing board was then removed, and the shield took its place on the existing UART ribbon.
 - A fifth column stretched the poll time. Bus speed went to 115200 and the indicators to a 40 Hz update.
 - Reused loom connectors corroded. The harness was rebuilt with ferrules, snap connectors, a twisted pair, and the drain bonded to the PG pin on each indicator.
 - The nozzle was touching the bottle, and the load cell was grazing the drum plate. Both put false mass on the scale. A firmware pre-arm gate now waits for real weight and for the nozzle to be down.
