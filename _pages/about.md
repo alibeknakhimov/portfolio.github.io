@@ -11,7 +11,7 @@ redirect_from:
 
 🔩 My work spans from microcontroller-based development using STM32 to integrated solutions on Single Board Computers(SBC) like Raspberry Pi and NVIDIA Jetson, emphasizing real-time performance, system stability, and scalability across various embedded environments.
 
-🔋 I am particularly passionate about hardware–software co-design, sensor integration, and power-efficient architectures for autonomous and connected systems. My recent projects involve remote content delivery networks for multi-display systems, custom UAV and VTOL control hardware, and IoT-based automation nodes for intelligent infrastructure.
+🔋 I am particularly passionate about hardware–software co-design, sensor integration, and power-efficient architectures for autonomous and connected systems. My recent projects involve remote content delivery networks for multi-display systems, an air-quality payload on a VTOL aircraft, and IoT-based automation nodes for intelligent infrastructure.
 
 Selected Experience
 ======

@@ -1,10 +1,10 @@
 ---
 title: "Air Quality Payload on a VTOL Aircraft"
-excerpt: "Put a Jetson Orin Nano and two sensor boards into the cargo bay of a purchased VTOL, and brought SSH plus MAVLink up over the existing radio. <br/> ![air quality sensor head](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/air/02_sensor_head.jpg)"
+excerpt: "Put a Jetson Orin Nano and two sensor boards into the cargo bay of a VTOL, and brought SSH plus MAVLink up over the existing radio. <br/> ![air quality sensor head](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/air/02_sensor_head.jpg)"
 collection: portfolio
 ---
 
-University research project under a state targeted-funding program. The aircraft was purchased: a VTOL hybrid that climbs vertically and then cruises as a plane. The radio and the ground station were purchased with it.
+University research project under a state targeted-funding program. The aircraft is a VTOL hybrid that climbs vertically and then cruises as a plane.
 
 **Role:** I did the payload alone. Companion computer, cargo-bay connector, and both sensor boards.  
 **Timeline:** about 2 months.  
@@ -14,7 +14,7 @@ University research project under a state targeted-funding program. The aircraft
 
 ### The aircraft
 
-![Purchased VTOL on the bench, cargo bay open]({{ site.url }}{{ site.baseurl }}/images/air/01_aircraft.jpg)
+![VTOL on the bench, cargo bay open]({{ site.url }}{{ site.baseurl }}/images/air/01_aircraft.jpg)
 
 The cargo bay slides out of the fuselage on latches. A plug on that bay already carried power. I added Ethernet to the same plug, so the payload seats as one module: push it in, and power and the network connect together.
 
@@ -30,7 +30,7 @@ Where each part sits, and how the bay slides in on the rails.
   <source src="{{ site.url }}{{ site.baseurl }}/videos/air/bay.mp4" type="video/mp4">
 </video>
 
-![Wiring inside the cargo bay]({{ site.url }}{{ site.baseurl }}/images/air/04_bay.jpg)
+<img src="{{ site.url }}{{ site.baseurl }}/images/air/04_bay.jpg" alt="Wiring inside the cargo bay" style="width:860px;max-width:100%;height:auto;">
 
 ![Bench setup: aircraft, handheld transmitter, ground station]({{ site.url }}{{ site.baseurl }}/images/air/05_bench.jpg)
 
