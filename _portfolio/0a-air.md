@@ -88,7 +88,7 @@ A Blackpill has a diode so that an external 5 V supply cannot feed back into the
 
 The clock in the log was stuck in year 2000. Spacing between samples is unchanged, and the first sample is placed at 14:07 on 6 May 2026.
 
-CO2 from the SCD30 rose from about 230 ppm and leveled near 630 ppm. PM2.5 from the SPS30 stayed near 16 µg/m³. CO, NO2, OX, and SO2 are the values stored in the log, each on its own scale. The file does not name their units. OX sits below zero for most of the run, so that zero is not a finished calibration.
+CO2 from the SCD30 rose from about 230 ppm and leveled near 630 ppm. PM2.5 from the SPS30 stayed near 16 µg/m³. CO, NO2, OX, and SO2 are each on their own scale. The file does not name their units. OX sits below zero for most of the run, so that zero is not a finished calibration.
 
 ---
 
