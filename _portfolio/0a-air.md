@@ -68,9 +68,7 @@ The air board speaks I2C: Sensirion SCD30 for CO2, Sensirion SPS30 for particula
 
 The gas board carries four Alphasense electrochemical cells: CO-B4, NO2-B43F, OX-B431 for ozone, and SO2-B4. The cells themselves are analog. On this board they are read over I2C.
 
-| Cells and the air board | Head under the fuselage |
-| :---: | :---: |
-| ![Four gas cells, SCD30 and SPS30]({{ site.url }}{{ site.baseurl }}/images/air/02_sensor_head.jpg) | ![Sensor head mounted under the shell]({{ site.url }}{{ site.baseurl }}/images/air/03_sensor_mounted.jpg) |
+![Four gas cells, SCD30 and SPS30]({{ site.url }}{{ site.baseurl }}/images/air/02_sensor_head.jpg)
 
 ---
 
@@ -81,6 +79,16 @@ Both boards on one I2C bus into the Jetson produced heavy noise and the samples 
 Each board now has its own Blackpill. The MCU reads its sensors on a short I2C bus and sends the samples to the Jetson over USB. Both boards take power from the Jetson.
 
 A Blackpill has a diode so that an external 5 V supply cannot feed back into the USB connector. I removed that diode. Each board has a single supply, the Jetson USB port, so there is no second source to feed back, and the 5 V rail is not dropped across the diode.
+
+---
+
+### One logged run
+
+![CO2, particulates, and the four gas cells over 20 minutes]({{ site.url }}{{ site.baseurl }}/images/air/06_run.png)
+
+The clock in the log was stuck in year 2000. Spacing between samples is unchanged, and the first sample is placed at 14:07 on 6 May 2026.
+
+CO2 from the SCD30 rose from about 230 ppm and leveled near 630 ppm. PM2.5 from the SPS30 stayed near 16 µg/m³. CO, NO2, OX, and SO2 are the values stored in the log, each on its own scale. The file does not name their units. OX sits below zero for most of the run, so that zero is not a finished calibration.
 
 ---
 
