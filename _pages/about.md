@@ -7,9 +7,9 @@ redirect_from:
   - /about.html
 ---
 
-I work on equipment that is already in the field. The mechanics stay. I replace the board, the firmware, or the link that is limiting the machine.
+I take a product from the board and the firmware to a machine that stays in service. I do the schematic, the PCB, the C firmware, and the bring-up, and I fit the electronics into the enclosure with the mechanical design.
 
-On a pharmaceutical filling line the weighing board was blocking the cycle. I kept the drum, nozzles, pumps, and stepper carrier, moved the scales to Modbus RTU indicators, and rewrote the STM32F407 stepper firmware. Throughput went from 480 to 650 bottles an hour. On a VTOL aircraft I fitted an air-quality payload in the cargo bay: a Jetson Orin Nano and two STM32 boards, with SSH and MAVLink on the Ethernet plug and radio already fitted to the aircraft.
+The microcontrollers are STM32, ESP32, and ESP8266. Where the system needs a computer next to them, I use a Raspberry Pi or a Jetson. The work includes power, sensors, isolation, and the link to what is already around the board: an operator PC, a radio, or a payment service. The firmware is bare-metal C. The machines are finished, and they are still running. The portfolio is the record: a pharmaceutical filling line, an air-quality payload flown on a VTOL, commercial arcade machines, and controllers in laundries, classrooms, and parking.
 
 Selected Experience
 ======
