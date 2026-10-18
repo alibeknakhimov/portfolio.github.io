@@ -1,10 +1,10 @@
 ---
 title: "Oilfield Pump-Jack Cabinet: LoRaWAN Beside the Existing PLC"
-excerpt: "Oilfield work. I designed the LoRaWAN board for a pump-jack cabinet. A student I was teaching wrote the firmware. The node reads the PLC that already runs the pump and writes the speed that program uses. <br/> ![pump-jack cabinet node](https://raw.githubusercontent.com/alibeknakhimov/alibeknakhimov.github.io/refs/heads/main/images/well/01_board.jpg)"
+excerpt: "Oilfield work. I designed the LoRaWAN board for a pump-jack cabinet and took part in the integration and the field tests. A student I was teaching wrote the firmware and is carrying the project on. The node reads the PLC that already runs the pump and writes the speed that program uses. <br/> ![pump-jack cabinet node](https://raw.githubusercontent.com/alibeknakhimov/alibeknakhimov.github.io/refs/heads/main/images/well/01_board.jpg)"
 collection: portfolio
 ---
 
-This is an oilfield pump jack. The cabinet already had drives, contactors, and a PLC with its own pumping program. I designed the LoRaWAN board that sits beside that program. The firmware was written by a student I was teaching, and we built the node together. The silk carries two marks: M COM, the company the board was made for, and the university where he studies.
+This is an oilfield pump jack. The cabinet already had drives, contactors, and a PLC with its own pumping program. I designed the LoRaWAN board, and I took part in the integration and the field tests. The firmware was written by a student I was teaching. He is continuing the project. The silk also carries the mark of the university where he studies.
 
 The node reads the PLC over Modbus and writes the speed into variables the program already uses. Pumping stays in the PLC. If the radio drops, the cabinet keeps running.
 
@@ -14,7 +14,7 @@ The board charges an external battery. In a mains outage the battery carries the
 
 On the site the link was checked at about 400 m, 900 m, 2 km, and 5 km.
 
-![Node on the bench. The silk shows the company the board was made for, and the university of the student who wrote the firmware.]({{ site.url }}{{ site.baseurl }}/images/well/01_board.jpg)
+![Node on the bench, antenna and relay outputs fitted]({{ site.url }}{{ site.baseurl }}/images/well/01_board.jpg)
 
 ![Same node in the oilfield cabinet, on the 24 V feed beside the existing drives]({{ site.url }}{{ site.baseurl }}/images/well/02_cabinet.jpg)
 
