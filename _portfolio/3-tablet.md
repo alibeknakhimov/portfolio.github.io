@@ -1,6 +1,6 @@
 ---
 title: "Breathalyzer Access Control Interface Board for Screening Tablet"
-excerpt: "Designed a custom isolated interface PCB for a breathalyzer and completed full hardware integration including enclosure assembly, wiring, mounting, and prototype validation. <br/> ![breathalyzer_interface](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/tablet.jpg)"
+excerpt: "Designed a custom isolated interface PCB for a breathalyzer and completed full hardware integration including enclosure assembly, wiring, mounting, and prototype validation. <br/> ![breathalyzer_interface](https://raw.githubusercontent.com/alibeknakhimov/alibeknakhimov.github.io/refs/heads/main/images/tablet.jpg)"
 collection: portfolio
 ---
 
@@ -43,13 +43,13 @@ The original device output high-voltage control signals intended for turnstile o
 
 ### PCB
 
-![](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/alc_pcb.jpg)
+![](https://raw.githubusercontent.com/alibeknakhimov/alibeknakhimov.github.io/refs/heads/main/images/alc_pcb.jpg)
 
 ---
 
 ### Block Diagram
 
-![](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/diagram.png)
+![](https://raw.githubusercontent.com/alibeknakhimov/alibeknakhimov.github.io/refs/heads/main/images/diagram.png)
 
 ---
 

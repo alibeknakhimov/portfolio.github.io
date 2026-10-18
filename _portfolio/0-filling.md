@@ -1,6 +1,6 @@
 ---
 title: "Gravimetric Filling Line: Firmware Modernization"
-excerpt: "Modernized a production pharmaceutical filling line: replaced a blocking HX711 weighing board with Modbus RTU indicators, rewrote the STM32 stepper firmware, and raised throughput from 480 to 650 bottles per hour. <br/> ![gravimetric filling line](https://raw.githubusercontent.com/alibeknakhimov/portfolio.github.io/refs/heads/master/images/filling/01_machine_overview.jpg)"
+excerpt: "Modernized a production pharmaceutical filling line: replaced a blocking HX711 weighing board with Modbus RTU indicators, rewrote the STM32 stepper firmware, and raised throughput from 480 to 650 bottles per hour. <br/> ![gravimetric filling line](https://raw.githubusercontent.com/alibeknakhimov/alibeknakhimov.github.io/refs/heads/main/images/filling/01_machine_overview.jpg)"
 collection: portfolio
 ---
 
