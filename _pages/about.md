@@ -7,50 +7,43 @@ redirect_from:
   - /about.html
 ---
 
-⚙️ My academic and technical interests lie primarily in embedded hardware design, control systems, and intelligent mechatronic platforms. I focus on developing efficient and reliable hardware architectures for automation, robotics, and industrial IoT applications.
+I work on equipment that is already in the field. The mechanics stay. I replace the board, the firmware, or the link that is limiting the machine.
 
-🔩 My work spans from microcontroller-based development using STM32 to integrated solutions on Single Board Computers(SBC) like Raspberry Pi and NVIDIA Jetson, emphasizing real-time performance, system stability, and scalability across various embedded environments.
-
-🔋 I am particularly passionate about hardware–software co-design, sensor integration, and power-efficient architectures for autonomous and connected systems. My recent projects involve remote content delivery networks for multi-display systems, an air-quality payload on a VTOL aircraft, and IoT-based automation nodes for intelligent infrastructure.
+On a pharmaceutical filling line the weighing board was blocking the cycle. I kept the drum, nozzles, pumps, and stepper carrier, moved the scales to Modbus RTU indicators, and rewrote the STM32F407 stepper firmware. Throughput went from 480 to 650 bottles an hour. On a VTOL aircraft I fitted an air-quality payload in the cargo bay: a Jetson Orin Nano and two STM32 boards, with SSH and MAVLink on the Ethernet plug and radio already fitted to the aircraft.
 
 Selected Experience
 ======
-### 🔧 Embedded Systems Engineer, Jaqsy IT
+### Embedded Systems Engineer, Jaqsy IT
 
-* Developed commercial embedded control systems and custom PCB designs for entertainment and IoT devices.
+* Built commercial control boards and firmware for entertainment and IoT machines, including the Naiza Boxer punching machine, now running in venues across Kazakhstan.
 
-* Designed PCBs, integrating microcontrollers, power management, and sensor interfaces.
+* Wrote ESP8266 firmware in C and C++ with interrupt-driven, event-based logic for sensing, payment, and actuators.
 
-* Developed and debugged firmware in C/C++ for ESP8266, implementing interrupt-driven and event-based logic.
+* Designed the PCBs around the microcontroller, power, and sensor interfaces, including optical isolation where the load required it.
 
-* Created hardware test setups for EMI validation, sensor calibration, and actuator control reliability.
+* Set up hardware tests for EMI, sensor calibration, and actuator reliability, and fitted the electronics into the enclosures in Fusion 360 with the mechanical engineers.
 
-* Collaborated with mechanical engineers using Fusion 360 to ensure integration of electronic modules into final enclosures.
+### IoT & Hardware Systems Developer, Alma Valley
 
-### 💡 IoT & Hardware Systems Developer, Alma Valley
+* Designed and deployed a Raspberry Pi media system for educational sites, with Node-RED and Firebase for remote content updates and device monitoring.
 
-* Designed and deployed a distributed media broadcasting system using Raspberry Pi for educational facilities.
+* Built a desktop tool in Python and JavaScript for uploads and for control of the endpoints.
 
-* Developed automation workflows in Node-RED with Firebase backend for remote content updates and device monitoring.
+* Wrote STM32 firmware for the peripheral modules, and led the PCB design and power stages for those boards.
 
-* Created a desktop interface in Python and JavaScript for managing uploads and controlling multiple endpoints.
-
-* Led PCB design for peripheral modules and power delivery systems for embedded edge devices.
-
-
+* Deployed a parking barrier on the same job: an ESP32 controller, Firebase for the open command, and YOLO tracking on the camera feed.
 
 Activities and Achievements
 ======
-🏆 Winner in the KRC2019 (Kazakhstan Robotics Challenge)
 
-🏆 Winner in the KazEnergy Competition
+* Spoke on behalf of Kazakhstan at an international summit on the adoption of BeiDou and its introduction in other countries.
 
-⚖️ Served as an official judge and university representative responsible for evaluating participants and awarding full academic scholarships
+* Winner of the 2019 Kazakhstan Robotics Challenge (KRC2019).
 
-👩🏻‍💻 Completed an internship at **Hyundai Trans Kazakhstan**, specializing in industrial automation and control systems, including process monitoring and PLC-based equipment management.
+* Winner of the KazEnergy Competition.
 
-🏛️ Visited **TalTech University (Estonia)** by official invitation to exchange expertise in robotics, embedded systems, and automation, representing Kazakh-British Technical University in international collaboration activities.
+* Official judge and university representative, scoring participants and awarding full academic scholarships.
 
-🏛️ Visited **Instituto Superior de Engenharia de Coimbra (Portugal)** by official invitation to share practical experience in IoT, control systems, and robotics education, fostering cross-institutional cooperation.
+* Internship at Hyundai Trans Kazakhstan in industrial automation: process monitoring and PLC-based equipment.
 
-
+* Official visits to TalTech (Estonia) and the Instituto Superior de Engenharia de Coimbra (Portugal), representing Kazakh-British Technical University in robotics, embedded systems, IoT, and control.
