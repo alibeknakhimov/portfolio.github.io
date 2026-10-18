@@ -2,6 +2,8 @@
 title: "Air Quality Payload on a VTOL Aircraft"
 excerpt: "Put a Jetson Orin Nano and two sensor boards into the cargo bay of a VTOL, and brought SSH plus MAVLink up over the existing radio. <br/> ![air quality sensor head](https://raw.githubusercontent.com/alibeknakhimov/alibeknakhimov.github.io/refs/heads/main/images/air/02_sensor_head.jpg)"
 collection: portfolio
+redirect_from:
+  - /portfolio/0a-air/
 ---
 
 University research project under a state targeted-funding program. The aircraft is a VTOL hybrid that climbs vertically and then cruises as a plane.
