@@ -41,3 +41,12 @@
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+
+// The theme reserves a tall gray band for its footer. That band is empty now.
+body {
+  padding-bottom: 2.5rem;
+}
+
+.page__footer {
+  display: none;
+}
